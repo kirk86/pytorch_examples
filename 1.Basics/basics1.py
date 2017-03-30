@@ -147,9 +147,9 @@ print(outputs.size())  # (10, 100)
 
 # save and load the model
 # save the load the entire model
-tch.save(resnet. 'model.pkl')
+tch.save(resnet, 'model.pkl')
 model = tch.load('model.pkl')
 
 # save and load only the model parameters
 tch.save(resnet.state_dict(), 'params.pkl')
-renset.load_state_dict(tch.load('params.pkl'))
+resnet.load_state_dict(tch.load('params.pkl'))
